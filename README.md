@@ -441,8 +441,7 @@ Planned milestones (not built): a stable ID from the state or federal library su
 
 | Validation | Result | Command |
 |---|---|---|
-| Unit tests | **37 passed** | `pytest -q` |
-| Expected CI | 37 passed in a clean venv with `.[dev]` only | `.github/workflows/ci.yml` |
+| Unit tests (CI installs only `.[dev]`) | **37 passed** | `pytest -q` |
 | Synthetic panel (150 libraries, seed 42) | 862 rows, 121 balanced libraries, 85 branch rows dropped, 1 phone link | `shelf-to-screen report` |
 | Synthetic fixed effects | `ebooks_pc` 0.764 [0.709, 0.818]. True value 0.8. Pooled OLS 1.849 (biased) | `shelf-to-screen report` |
 | Synthetic classifier (5 grouped folds) | ROC-AUC: logistic 0.862, gradient boosting 0.978, base rate 0.5 | `shelf-to-screen report` |
